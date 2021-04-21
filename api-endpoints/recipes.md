@@ -1,6 +1,6 @@
 # Recipes
 
-{% api-method method="get" host="https://mealplanshop.herokuapp.com/api/recipes/" path="" %}
+{% api-method method="get" host="https://mealplanshop.herokuapp.com" path="/api/recipes" %}
 {% api-method-summary %}
 Returns list of recipes
 {% endapi-method-summary %}
@@ -41,7 +41,7 @@ You should get a return of the list of recipe names for a given user.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://mealplanshop.herokuapp.com/api/recipes" path="/" %}
+{% api-method method="post" host="https://mealplanshop.herokuapp.com" path="/api/recipes/" %}
 {% api-method-summary %}
 Create a recipe for a user.
 {% endapi-method-summary %}
@@ -91,7 +91,7 @@ The recipe name
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://mealplanshop.herokuapp.com/api/recipe/{recipe id}/" path="" %}
+{% api-method method="get" host="https://mealplanshop.herokuapp.com" path="/api/recipe/{recipe id}/" %}
 {% api-method-summary %}
 Get the recipe id for a user.
 {% endapi-method-summary %}
@@ -129,7 +129,7 @@ This is the recipe id.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="https://mealplanshop.com/herokuapp.com/api/recipes/{recipe id}/" path="" %}
+{% api-method method="patch" host="https://mealplanshop.com/herokuapp.com/api" path="/api/recipes/{recipe id}/" %}
 {% api-method-summary %}
 Update the information for a recipe.
 {% endapi-method-summary %}
@@ -167,7 +167,7 @@ This is the recipe id
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="https://mealplanshop.herokuapp.com/api/recipe/{recipe id}/" path="" %}
+{% api-method method="delete" host="https://mealplanshop.herokuapp.com" path="/api/recipe/{recipe id}/" %}
 {% api-method-summary %}
 Delete a recipe
 {% endapi-method-summary %}
