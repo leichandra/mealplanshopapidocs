@@ -91,7 +91,7 @@ The recipe name
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://mealplanshop.herokuapp.com" path="/api/recipe/{user id}/" %}
+{% api-method method="get" host="https://mealplanshop.herokuapp.com" path="/api/recipe/{recipe id}/" %}
 {% api-method-summary %}
 Get the recipe id for a user.
 {% endapi-method-summary %}
