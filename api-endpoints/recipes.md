@@ -145,6 +145,16 @@ Update the information for a recipe given the recipe id.
 This is the recipe id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="ingredients" type="string" required=false %}
+This includes the ingredients of the recipe
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="instructions" type="string" required=false %}
+This includes the instructions for the recipe
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
