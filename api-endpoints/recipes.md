@@ -147,6 +147,10 @@ This is the recipe id
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="name" type="string" required=false %}
+This is the name of the recipe
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="ingredients" type="string" required=false %}
 This includes the ingredients of the recipe
 {% endapi-method-parameter %}
