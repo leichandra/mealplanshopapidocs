@@ -1,6 +1,6 @@
 # Agendas
 
-{% api-method method="get" host="http://mealplanshop.herokuapp.com/api/agendas/" path="" %}
+{% api-method method="get" host="http://mealplanshop.herokuapp.com" path="/api/agendas/" %}
 {% api-method-summary %}
 Get the agendas list for a user.
 {% endapi-method-summary %}
@@ -25,7 +25,22 @@ You can get the list of agendas for a user.
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    "agendas": [
+        {
+            "date": "March 28, 2021"
+        },
+        {
+            "date": "March 31, 2021"
+        },
+        {
+            "date": "April 5, 2021"
+        },
+        {
+            "date": "April 11, 2021"
+        }
+    ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
