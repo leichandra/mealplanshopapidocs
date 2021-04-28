@@ -6,7 +6,7 @@ Get the agendas list for a user.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-You can get the list of agendas for a user.
+You can get the list of agendas for a user with a list of recipe ids.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -28,19 +28,67 @@ You can get the list of agendas for a user.
 {
     "agendas": [
         {
-            "date": "March 28, 2021"
+            "id": 4,
+            "date": "April 1, 2021",
+            "breakfast_recipe": 9,
+            "lunch_recipe": 54,
+            "dinner_recipe": 6
         },
         {
-            "date": "March 31, 2021"
+            "id": 5,
+            "date": "April 2, 2021",
+            "breakfast_recipe": 86,
+            "lunch_recipe": 4,
+            "dinner_recipe": 67
         },
         {
-            "date": "April 5, 2021"
+            "id": 6,
+            "date": "April 3, 2021",
+            "breakfast_recipe": 5,
+            "lunch_recipe": 33,
+            "dinner_recipe": 43 
         },
         {
-            "date": "April 11, 2021"
+            "id": 7,
+            "date": 22,
+            "breakfast_recipe": 48,
+            "lunch_recipe": 3,
+            "dinner_recipe": 8
         }
     ]
 }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="http://mealplanshop.herokuapp.com" path="/api/agendas/" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+  
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
