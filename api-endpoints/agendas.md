@@ -74,11 +74,23 @@ Create an agenda for a given date for a user.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-body-parameters %}
+{% api-method-parameter name="dinner\_recipe" type="string" required=false %}
+Dinner recipe representing the dinner recipe name such as: dinner\_recipe = "Goat cheese spaghetti"
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+
+{% api-method-parameter name="date" type="string" required=false %}
+String representing the date such as: date = "April 12, 2021"
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="breakfast\_recipe" type="string" required=false %}
+String representing the breakfast recipe name such as: breakfast\_recipe = "waffley strawberry"
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="lunch\_recipe" type="string" required=false %}
+String representing the lunch recipe name such as: lunch\_recipe = "gluten-free vegan pizza"
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -88,6 +100,14 @@ Create an agenda for a given date for a user.
 {% endapi-method-response-example-description %}
 
 ```
+{
+    "id": 54,
+    "name": "pop tart",
+    "created_at": "08/07/2020",
+    "updated_at": "04/01/2021",
+    "ingredients": "pop tart",
+    "Instructions": "1. Put pop tart in toaster\n2. Let cool down\n3. Eat"
+}
 
 ```
 {% endapi-method-response-example %}
