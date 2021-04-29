@@ -1,5 +1,7 @@
 # Recipe
 
+Example of a recipe resource:
+
 `{  
      "id": 54,   
      "name": "pop tart",   
