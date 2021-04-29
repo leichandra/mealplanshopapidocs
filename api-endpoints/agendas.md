@@ -1,3 +1,7 @@
+---
+description: Requests and Responses are in JSON format.
+---
+
 # Agendas
 
 {% api-method method="get" host="http://mealplanshop.herokuapp.com" path="/api/agendas/" %}
@@ -69,26 +73,30 @@ Create an agenda for a given date for a user.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Create an agenda for a given date for a user.
+Create an agenda for a given date for a user.   
+  
+`{   
+"date": "April 28, 2021" "breakfast_recipe": "waffle and strawberries", "lunch_recipe": "peanut butter cookies", "dinner_recipe": "orange chicken and fried rice"   
+}`  
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="dinner\_recipe" type="string" required=false %}
-Dinner recipe representing the dinner recipe name such as: dinner\_recipe = "Goat cheese spaghetti"
+Dinner recipe representing the dinner recipe name such as: "dinner\_recipe": "Goat cheese spaghetti"
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="date" type="string" required=false %}
-String representing the date such as: date = "April 12, 2021"
+String representing the date such as: "date": "April 12, 2021"
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="breakfast\_recipe" type="string" required=false %}
-String representing the breakfast recipe name such as: breakfast\_recipe = "waffley strawberry"
+String representing the breakfast recipe name such as: "breakfast\_recipe": "waffley strawberry"
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lunch\_recipe" type="string" required=false %}
-String representing the lunch recipe name such as: lunch\_recipe = "gluten-free vegan pizza"
+String representing the lunch recipe name such as: "lunch\_recipe": "gluten-free vegan pizza"
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

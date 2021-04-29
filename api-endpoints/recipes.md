@@ -1,3 +1,7 @@
+---
+description: Requests and Responses are in JSON format.
+---
+
 # Recipes
 
 {% api-method method="get" host="https://mealplanshop.herokuapp.com" path="/api/recipes" %}
