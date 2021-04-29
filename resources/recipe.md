@@ -11,3 +11,13 @@ Example recipe resource:
      "Instructions": "1. Put pop tart in toaster\n2. Let cool down\n3. Eat"   
 }`
 
+
+
+| Field | Type | Definition |
+| :--- | :--- | :--- |
+| id | integer | the id of the recipe |
+| created\_at | string | the date recipe was created, written as MM/DD/YYYY |
+| updated\_at | string | the date the recipe was last updated, written as MM/DD/YYYY |
+| ingredients | string | the ingredients of the recipe |
+| instructions | string | the steps of the recipe |
+
