@@ -1,6 +1,6 @@
 # Recipe
 
-Example of a recipe resource:
+Example recipe resource:
 
 `{  
      "id": 54,   
