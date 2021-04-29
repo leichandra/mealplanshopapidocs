@@ -112,9 +112,9 @@ String representing the lunch recipe name such as: "lunch\_recipe": "gluten-free
 {
     "id": 5,
     "date": "April 28, 2021",
-    "breakfast_recipe": "oatmeal and raisins",
-    "lunch_recipe": "pineapple fried rice",
-    "dinner_recipe": "coconut curry with lamb"
+    "breakfast_recipe": 8,
+    "lunch_recipe": 11,
+    "dinner_recipe": 20
 }
 
 ```
@@ -123,7 +123,7 @@ String representing the lunch recipe name such as: "lunch\_recipe": "gluten-free
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="http://mealplanshop.herokuapp.com/api/agendas/{agenda id}/" path="" %}
+{% api-method method="get" host="http://mealplanshop.herokuapp.com/api" path="/api/agendas/{agenda id}/" %}
 {% api-method-summary %}
 Get the information for an agenda given the agenda id.
 {% endapi-method-summary %}
