@@ -63,7 +63,7 @@ You can get the list of agendas for a user with a list of recipe ids.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="http://mealplanshop.herokuapp.com/api/agendas" path="/" %}
+{% api-method method="post" host="http://mealplanshop.herokuapp.com" path="/api/agendas/" %}
 {% api-method-summary %}
 Create an agenda for a given date for a user.
 {% endapi-method-summary %}
