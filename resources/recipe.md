@@ -1,3 +1,9 @@
+---
+description: >-
+  The recipe resource describes a set of instructions for preparing a particular
+  dish, including a list of the ingredients required.
+---
+
 # Recipe
 
 Example recipe resource:
@@ -11,7 +17,7 @@ Example recipe resource:
      "Instructions": "1. Put pop tart in toaster\n2. Let cool down\n3. Eat"   
 }`
 
-
+#### Recipe Attributes
 
 | Field | Type | Definition |
 | :--- | :--- | :--- |
