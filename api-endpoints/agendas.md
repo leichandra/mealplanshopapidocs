@@ -190,8 +190,8 @@ String representing the breakfast recipe name such as: "breakfast\_recipe": "waf
 String representing the lunch recipe name such as: "lunch\_recipe": "gluten-free vegan pizza"
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="dinner\_recipe" type="string" required=false %}
-
+{% api-method-parameter type="string" name="dinner\_recipe" %}
+Dinner recipe representing the dinner recipe name such as: "dinner\_recipe": "Goat cheese spaghetti"
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
