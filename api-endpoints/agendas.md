@@ -76,29 +76,29 @@ Create an agenda for a given date.
 The following is a sample request body.  
 `{   
      "date": "April 28, 2021",   
-     "breakfast_recipe": "waffle and strawberries",   
-     "lunch_recipe": "peanut butter cookies",   
-     "dinner_recipe": "orange chicken and fried rice"   
+     "breakfast_recipe": 8,   
+     "lunch_recipe": 11,   
+     "dinner_recipe": 20   
 }`  
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="dinner\_recipe" type="string" required=false %}
-Dinner recipe representing the dinner recipe name such as: "dinner\_recipe": "Goat cheese spaghetti"
+{% api-method-parameter name="dinner\_recipe" type="integer" required=false %}
+Dinner recipe id 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="date" type="string" required=false %}
-String representing the date such as: "date": "April 12, 2021"
+String representing the date with the month spelled out with the first letter capitalized, the day in number format \(without a leading zero\), and a four digit year such as: "April 2, 2021"
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="breakfast\_recipe" type="string" required=false %}
-String representing the breakfast recipe name such as: "breakfast\_recipe": "waffley strawberry"
+{% api-method-parameter name="breakfast\_recipe" type="integer" required=false %}
+Breakfast recipe id
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lunch\_recipe" type="string" required=false %}
-String representing the lunch recipe name such as: "lunch\_recipe": "gluten-free vegan pizza"
+{% api-method-parameter name="lunch\_recipe" type="integer" required=false %}
+Lunch recipe id
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
