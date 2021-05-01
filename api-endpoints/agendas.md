@@ -179,20 +179,20 @@ This is the agenda id
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="date" type="string" %}
-String representing the date such as: "date": "April 12, 2021"
+{% api-method-parameter type="string" name="date" %}
+String representing the date with the month spelled out with the first letter capitalized, the day in number format \(without a leading zero\), and a four digit year such as: "April 2, 2021"
 {% endapi-method-parameter %}
 
 {% api-method-parameter type="string" name="breakfast\_recipe" %}
-String representing the breakfast recipe name such as: "breakfast\_recipe": "waffley strawberry"
+Breakfast recipe id
 {% endapi-method-parameter %}
 
 {% api-method-parameter type="string" name="lunch\_recipe" %}
-String representing the lunch recipe name such as: "lunch\_recipe": "gluten-free vegan pizza"
+Lunch recipe id
 {% endapi-method-parameter %}
 
 {% api-method-parameter type="string" name="dinner\_recipe" %}
-Dinner recipe representing the dinner recipe name such as: "dinner\_recipe": "Goat cheese spaghetti"
+Dinner recipe id
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
