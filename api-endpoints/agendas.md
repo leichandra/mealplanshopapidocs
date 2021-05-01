@@ -137,7 +137,7 @@ Get the information for an agenda given the agenda id.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="{agenda id}" type="integer" required=false %}
-The agenda's id
+The agenda id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -167,7 +167,7 @@ Update an agenda date.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Update an agenda date.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -183,15 +183,15 @@ This is the agenda id
 String representing the date with the month spelled out with the first letter capitalized, the day in number format \(without a leading zero\), and a four digit year such as: "April 2, 2021"
 {% endapi-method-parameter %}
 
-{% api-method-parameter type="string" name="breakfast\_recipe" %}
+{% api-method-parameter type="integer" name="breakfast\_recipe" %}
 Breakfast recipe id
 {% endapi-method-parameter %}
 
-{% api-method-parameter type="string" name="lunch\_recipe" %}
+{% api-method-parameter type="integer" name="lunch\_recipe" %}
 Lunch recipe id
 {% endapi-method-parameter %}
 
-{% api-method-parameter type="string" name="dinner\_recipe" %}
+{% api-method-parameter type="integer" name="dinner\_recipe" %}
 Dinner recipe id
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -223,7 +223,7 @@ Delete an agenda date.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Delete an agenda date.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
