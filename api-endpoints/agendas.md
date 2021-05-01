@@ -10,7 +10,7 @@ Get the agendas list for a user.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-You can get the list of agendas for a user with a list of recipe ids.
+You can get the list of agendas.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -210,38 +210,6 @@ Dinner recipe representing the dinner recipe name such as: "dinner\_recipe": "Go
     "lunch_recipe": 11,
     "dinner_recipe": 20
 }
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% api-method method="post" host="http://mealplanshop.herokuapp.com" path="/api/agendas/" %}
-{% api-method-summary %}
-
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="date" type="string" required=false %}
-String representing the date such as: "date": "April 12, 2021"
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
