@@ -69,15 +69,16 @@ You can get the list of agendas.
 
 {% api-method method="post" host="http://mealplanshop.herokuapp.com" path="/api/agendas/" %}
 {% api-method-summary %}
-Create an agenda for a given date for a user.
+Create an agenda for a given date.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Create an agenda for a given date for a user.   
-  
 The following is a sample request body.  
 `{   
-"date": "April 28, 2021" "breakfast_recipe": "waffle and strawberries", "lunch_recipe": "peanut butter cookies", "dinner_recipe": "orange chicken and fried rice"   
+     "date": "April 28, 2021",   
+     "breakfast_recipe": "waffle and strawberries",   
+     "lunch_recipe": "peanut butter cookies",   
+     "dinner_recipe": "orange chicken and fried rice"   
 }`  
 {% endapi-method-description %}
 
