@@ -203,7 +203,13 @@ Dinner recipe representing the dinner recipe name such as: "dinner\_recipe": "Go
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    "id": 5,
+    "date": "April 28, 2021",
+    "breakfast_recipe": 8,
+    "lunch_recipe": 11,
+    "dinner_recipe": 20
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -242,7 +248,7 @@ String representing the date such as: "date": "April 12, 2021"
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="http://mealplanshop.herokuapp.com/api/agendas/{agenda id}/" path="" %}
+{% api-method method="delete" host="http://mealplanshop.herokuapp.com" path="/api/agendas/{agenda id}" %}
 {% api-method-summary %}
 Delete an agenda date.
 {% endapi-method-summary %}
@@ -254,8 +260,8 @@ Delete an agenda date.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-parameter name="{agenda id}" type="integer" required=false %}
+This is the agenda id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
