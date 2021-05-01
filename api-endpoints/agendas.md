@@ -186,8 +186,8 @@ String representing the date such as: "date": "April 12, 2021"
 String representing the breakfast recipe name such as: "breakfast\_recipe": "waffley strawberry"
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lunch\_recipe" type="string" required=false %}
-
+{% api-method-parameter type="string" name="lunch\_recipe" %}
+String representing the lunch recipe name such as: "lunch\_recipe": "gluten-free vegan pizza"
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="dinner\_recipe" type="string" required=false %}
