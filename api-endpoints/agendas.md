@@ -150,7 +150,7 @@ The agenda id
 
 ```
 {
-    "date": "April 28, 2021",
+    "date": "2021-04-28",
     "breakfast_recipe": 20,
     "lunch_recipe": 4,
     "dinner_recipe": 19
