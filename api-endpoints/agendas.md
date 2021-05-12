@@ -75,7 +75,7 @@ Create an agenda for a given date.
 {% api-method-description %}
 The following is a sample request body.  
 `{   
-     "date": "April 28, 2021",   
+     "date": "2021-04-28",   
      "breakfast_recipe": 8,   
      "lunch_recipe": 11,   
      "dinner_recipe": 20   
@@ -90,7 +90,7 @@ Dinner recipe id
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="date" type="string" required=false %}
-String representing the date with the month spelled out with the first letter capitalized, the day in number format \(without a leading zero\), and a four digit year such as: "April 2, 2021"
+String representing the date with the 4 digit year separated by a dash, the month with a leading 0, and the day with a leading 0 such as: "2021-04-28"
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="breakfast\_recipe" type="integer" required=false %}
@@ -112,7 +112,7 @@ Lunch recipe id
 ```
 {
     "id": 5,
-    "date": "April 28, 2021",
+    "date": "2021-04-28",
     "breakfast_recipe": 8,
     "lunch_recipe": 11,
     "dinner_recipe": 20
