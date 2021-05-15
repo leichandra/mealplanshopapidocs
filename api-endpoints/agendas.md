@@ -161,7 +161,7 @@ The agenda id
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="http://mealplanshop.com" path="/api/agenda/{agenda id}" %}
+{% api-method method="patch" host="http://mealplanshop.com" path="/api/agendas/{agenda id}" %}
 {% api-method-summary %}
 Update an agenda date.
 {% endapi-method-summary %}
