@@ -1,6 +1,6 @@
 # Shopping List
 
-{% api-method method="post" host="https://mealplanshop.herokuapp.com" path="/api/shoppinglist" %}
+{% api-method method="post" host="https://mealplanshop.herokuapp.com" path="/api/shoppinglist/ingredient" %}
 {% api-method-summary %}
 Post the ingredient to the Current Shopping List 
 {% endapi-method-summary %}
