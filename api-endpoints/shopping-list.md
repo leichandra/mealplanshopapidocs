@@ -12,6 +12,10 @@ Post the ingredient to the Current Shopping List
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="store" type="string" required=false %}
+The store name where the ingredient will be bought
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="name" type="string" required=true %}
 Ingredient name 
 {% endapi-method-parameter %}
